@@ -7,6 +7,16 @@ body {
   background-attachment: fixed; 
   background-size: 100% 100%;
 }
+h3 {text-align: center;}
+p {text-align: center;}
+.marginauto {
+    margin: 10px auto 20px;
+    display: block;
+}
+.center {
+  text-align: center;
+  list-style-position: inside;
+}
 </style>
 	<head>
 	<title> Welcome To My Page </title>
@@ -17,7 +27,7 @@ body {
 		<hr/>
     <nav class="navbar navbar-inverse">
     <div class="container-fluid">
-    <ul class="nav navbar-nav">
+    <ul style="font-family:'Comic sans MS'" class="nav navbar-nav">
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#project">Project</a></li>
@@ -25,56 +35,45 @@ body {
   </div>
 </nav>
      <div id="about">
-      <h2>About</h2>
-      <p>
-      I'm currently a sophomore student at Brooklyn College that is majored in Computer Science. I'm passionate about languages and sneaker culture. For now, the languages that I've acquired include English, Mandarin, Cantonese, Japanese, and Spanish. I ' m also a huge enthusiast of sneaker culture. I've been collecting sneakers since high school. The reason that motivates me to major in Computer Science might be because I've been contacting computers from a very young age and that I'm a game lover.
-      </p>
+      <h2 style="font-family:'Comic sans MS'">About</h2>
+      <p style="font-family:'Georgia'">I'm currently a sophomore student at Brooklyn College that is majored in Computer Science. I'm passionate about languages and sneaker culture.</p>
+      <p style="font-family:'Georgia'">I'm passionate about languages and sneaker culture.</p>
+      <p style="font-family:'Georgia'"> For now, the languages that I've acquired include English, Mandarin, Cantonese, Japanese, and Spanish.</p>
+      <p style="font-family:'Georgia'">I ' m also a huge enthusiast of sneaker culture. I've been collecting sneakers since high school.</p>
+      <p style="font-family:'Georgia'">The reason that motivates me to major in Computer Science might be because I've been contacting computers from a very young age and that I'm a game lover.</p>
       <br>
       <img src="img/Languages.jpg" alt="Different Languages" width="350" height="350" hspace="80">
       <img src="img/Sneakers.jpg" alt="Collection of Sneakers" width="350" height="350" hspace="80">
       <img src="img/Computer_Games.jpg" alt="Computer Games" width="350" height="350" hspace="80">
       </div>
       <div id="education">
-      <h2>Education</h2>
-      <table style="width:70%">
-      <tr>
-      <th>Past</th>
-      <th>Current</th> 
-      </tr>
-      <tr>
-      <td><i>International High School at Lafayette</i></td>
-      <td><i>CUNY Brooklyn College</i></td>
-      </tr>
-      </table>
+      <h2 style="font-family:'Comic sans MS'">Education</h2>
+      <h3 style="font-family:'Georgia'">Past</h3>
+      <p style="font-family:'Georgia'">International High School at Lafayette</p>
       <br>
-      <img src="img/IHSL.jpg" alt="IHSL Logo" width="250" height="100" hspace="50">
-      <img src="img/Arrow.png" alt="Arrow" width="120" height="100" hspace="140">
-      <img src="img/BrooklynCollege.png" alt="BK Logo" width="250" height="100" hspace="100">
+      <a href="http://www.inths.org/">
+      <img class="marginauto" src="https://pbs.twimg.com/profile_images/1379794799/Logo1.jpg" alt="IHSL Logo" width="250" height="100" hspace="50">
+      </a>
+      <img class="marginauto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-iCfm4A8sJRFWQqA0gfDlRSq2ZSyWPNkWBBrOwc2-btUo5YX8&usqp=CAU" alt="Arrow" width="250" height="100" hspace="140">
+      <p style="font-family:'Georgia'">CUNY Brooklyn College</p>
+      <a href="http://www.brooklyn.cuny.edu/web/home.php">
+      <img class="marginauto" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Brooklyn_College_Logo.svg/1280px-Brooklyn_College_Logo.svg.png" alt="BK Logo" width="250" height="100" hspace="100">
+      </a>
       </div>
       <div id="project">
-      <h2>Project</h2>
-      <p>
-      Below demonstrates the projects that I've worked on CISC 3115:
-      </p>
+      <h2 style="font-family:'Comic sans MS'">Project</h2>
+      <p style="font-family:'Georgia'">Below demonstrates the projects that I've worked on CISC 3115:</p>
       <ul style="list-style-type:square;">
       <li><a href="https://github.com/victorliangzheng88/A1---Top-Streaming-Music-Artists">Top Streaming Music Artist</a></li>
       <li><a href="https://github.com/victorliangzheng88/A2---Music-playlist">Music Playlist</a></li>
       <li><a href="https://github.com/victorliangzheng88/A3---Movie-Titles">Movie Titles</a></li>
       <li><a href="https://github.com/victorliangzheng88/A4---Movie-Genres">Movie Genres</a></li>
       </ul>
-      <p>
-      Top Streaming Music Artist: A project that  read in a file of the top streaming music artist in Spotify and converts those data into the format of the number of times the artist appeared on the list and also sorted it by their names alphabetically.
-      </p>
-      <p>
-      Music Playlist: A project that read in multiples files of the top streaming music with the artist in Spotify and convert those data into a playlist with the possibility of manipulating those data with a song history list.
-      </p>
-      <p>
-      Movie Titles: A project that read in a CSV file of movie titles and parse that data into a binary search tree. With that data, we are required to find movie titles between the range of the two movie titles that the user provides to the program in a binary search tree.
-      </p>
-      <p>
-      Movie Genres: A project that read in a CSV file of movie genres and parse that data into a LinkedList. With that data, we are required to answer three questions:
-      </p>
-      <ol>
+      <p style="font-family:'Georgia'">Top Streaming Music Artist: A project that  read in a file of the top streaming music artist in Spotify and converts those data into the format of the number of times the artist appeared on the list and also sorted it by their names alphabetically.</p>
+      <p style="font-family:'Georgia'">Music Playlist: A project that read in multiples files of the top streaming music with the artist in Spotify and convert those data into a playlist with the possibility of manipulating those data with a song history list.</p>
+      <p style="font-family:'Georgia'">Movie Titles: A project that read in a CSV file of movie titles and parse that data into a binary search tree. With that data, we are required to find movie titles between the range of the two movie titles that the user provides to the program in a binary search tree.</p>
+      <p style="font-family:'Georgia'">Movie Genres: A project that read in a CSV file of movie genres and parse that data into a LinkedList. With that data, we are required to answer three questions:</p>
+      <ol style="font-family:'Georgia'">
       <li>How many movies are classified under each genre?</li>
       <li>How many for the whole data set versus the most recent 5 years?</li>
       <li>How many movies of each genre came out each decade?</li>
