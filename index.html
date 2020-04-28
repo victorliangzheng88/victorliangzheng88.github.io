@@ -72,6 +72,9 @@ p {text-align: center;}
 		<h1 class="title"> <center> Victor Liang Zheng Portfolio </center> </h1>
     <img class="marginauto" src="https://i.ya-webdesign.com/images/welcome-gif-png-15.gif" alt="Welcome" width="400" height="100" hspace="0">
 		<br/>
+    <audio id= "audio" controls autoplay onloadeddata="setSafeVolume()">
+		<source src="music/JJD-Adventure.mp3"  type="audio/mp3">
+    </audio>
 		<hr/>
     <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -169,9 +172,6 @@ p {text-align: center;}
       </div>
       <br>
       <hr/>
-	<audio id= "audio1" controls autoplay onloadeddata="setHalfVolume()">
-		<source src="music/JJD-Adventure.mp3"  type="audio/mp3">
-			</audio>
       <script>
       function myFunctionL() {
       var popup = document.getElementById("Languages");
@@ -185,10 +185,10 @@ p {text-align: center;}
       var popup = document.getElementById("Games");
       popup.classList.toggle("show");
       }
-	      function setHalfVolume() {
-    var myAudio = document.getElementById("audio1");  
-    myAudio.volume = 0.5;
-}
+      function setSafeVolume() {
+      var myAudio = document.getElementById("audio");  
+      myAudio.volume = 0.25;
+      }
       </script>
       </body>
       </html>
