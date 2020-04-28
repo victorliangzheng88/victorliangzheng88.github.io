@@ -75,6 +75,9 @@ p {text-align: center;}
     <audio id= "audio" controls autoplay onloadeddata="setSafeVolume()">
 		<source src="music/JJD-Adventure.mp3"  type="audio/mp3">
     </audio>
+    <h3 style="font-family:'Georgia'">
+    BGM: JJD - Adventure
+    </h3>
 		<hr/>
     <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -128,8 +131,6 @@ p {text-align: center;}
       </span>
       </div>
       <img class="marginauto" src="https://media1.giphy.com/media/5YkZivffg31lfCci9x/source.gif" alt="Computer Games" width="250" height="250" hspace="0">
-      
-      
       </div>
       <div id="education">
       <h2 style="font-family:'Comic sans MS'">EDUCATION</h2>
@@ -149,31 +150,35 @@ p {text-align: center;}
       <div id="project">
       <h2 style="font-family:'Comic sans MS'">PROJECT</h2>
       <p style="font-family:'Georgia'">Below demonstrates the projects that I've worked on CISC 3115:</p>
-      <span style="font-family:'Georgia'"><a href="https://github.com/victorliangzheng88/A1---Top-Streaming-Music-Artists">Top Streaming Music Artist</a></span>
-      <br>
-      <span style="font-family:'Georgia'"><a href="https://github.com/victorliangzheng88/A2---Music-playlist">Music Playlist</a></span>
-      <br>
-      <span style="font-family:'Georgia'"><a href="https://github.com/victorliangzheng88/A3---Movie-Titles">Movie Titles</a></span>
-      <br>
-      <span style="font-family:'Georgia'"><a href="https://github.com/victorliangzheng88/A4---Movie-Genres">Movie Genres</a></span>
-      <br>
-      <p style="font-family:'Georgia'">Top Streaming Music Artist: A project that read in a file of the top streaming music artist in Spotify
+      <p style="font-family:'Georgia'"><a href="https://github.com/victorliangzheng88/A1---Top-Streaming-Music-Artists">Top Streaming Music Artist</a>: A project that read in a file of the top streaming music artist in Spotify
       <br>and converts those data into the format of the number of times the artist appeared on the list 
       <br>and also sorted it by their names alphabetically.</p>
-      <p style="font-family:'Georgia'">Music Playlist: A project that read in multiples files of the top streaming music with the artist in Spotify 
+      <a href="https://github.com/victorliangzheng88/A1---Top-Streaming-Music-Artists">
+      <img class="marginauto" src="https://chartmasters.org/wp-content/uploads/2019/09/Spotify-30122019-All-time-top-artists.png" alt="Streaming Artist" width="550" height="250" hspace="100">
+      </a>
+      <p style="font-family:'Georgia'"><a href="https://github.com/victorliangzheng88/A2---Music-playlist">Music Playlist</a>: A project that read in multiples files of the top streaming music with the artist in Spotify 
       <br>and convert those data into a playlist with the possibility of manipulating those data with a song history list.</p>
-      <p style="font-family:'Georgia'">Movie Titles: A project that read in a CSV file of movie titles and parse that data into a binary search tree. 
+      <a href="https://github.com/victorliangzheng88/A2---Music-playlist">
+      <img class="marginauto" src="https://i1.wp.com/www.michaeljkramer.net/wp-content/uploads/2016/02/Spotify-add-song-to-playlist.jpg" alt="Music Playlist" width="550" height="250" hspace="100">
+      </a>
+      <p style="font-family:'Georgia'"><a href="https://github.com/victorliangzheng88/A3---Movie-Titles">Movie Titles</a>: A project that read in a CSV file of movie titles and parse that data into a binary search tree. 
       <br>With that data, we are required to find movie titles between the range of the two movie titles that the user provides 
       <br>to the program in a binary search tree.</p>
-      <p style="font-family:'Georgia'">Movie Genres: A project that read in a CSV file of movie genres 
+      <a href="https://github.com/victorliangzheng88/A3---Movie-Titles">
+      <img class="marginauto" src="https://i.insider.com/5e721af9c48540088f66f3a3?width=1200&format=jpeg" alt="Movie Titles" width="550" height="250" hspace="100">
+      </a>
+      <p style="font-family:'Georgia'"><a href="https://github.com/victorliangzheng88/A4---Movie-Genres">Movie Genres</a>: A project that read in a CSV file of movie genres 
       <br>and parse that data into a LinkedList. With that data, we are required to answer three questions:</p>
-      
       <span style="font-family:'Georgia'">How many movies are classified under each genre?</span>
       <br>
       <span style="font-family:'Georgia'">How many for the whole data set versus the most recent 5 years?</span>
       <br>
       <span style="font-family:'Georgia'">How many movies of each genre came out each decade?</span>
       <br>
+      <br>
+      <a href="https://github.com/victorliangzheng88/A4---Movie-Genres">
+      <img class="marginauto" src="https://image.shutterstock.com/image-vector/film-genres-icons-grunge-black-260nw-1170091327.jpg" alt="Movie Genres" width="550" height="350" hspace="100">
+      </a>
       <br>
       </div>
       <br>
@@ -193,7 +198,7 @@ p {text-align: center;}
       }
       function setSafeVolume() {
       var myAudio = document.getElementById("audio");  
-      myAudio.volume = 0.15;
+      myAudio.volume = 0.25;
       }
       </script>
       </body>
