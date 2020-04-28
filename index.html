@@ -17,26 +17,76 @@ p {text-align: center;}
   text-align: center;
   list-style-position: inside;
 }
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -40px;
+}
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
 </style>
 	<head>
 	<title> Welcome To My Page </title>
 	</head>
-		<body bgcolor="honeydew" text="dodgerblue" link="royalblue" vlink="lightpink" alink="royalblue">
+		<body style="text-align:center" bgcolor="honeydew" text="dodgerblue" link="royalblue" vlink="lightpink" alink="royalblue">
 		<h1 class="title"> <center> Victor Liang Zheng Portfolio </center> </h1>
     <img class="marginauto" src="https://i.ya-webdesign.com/images/welcome-gif-png-15.gif" alt="Welcome" width="400" height="100" hspace="0">
 		<br/>
 		<hr/>
     <nav class="navbar navbar-inverse">
     <div class="container-fluid">
-    <ul style="font-family:'Comic sans MS'" class="nav navbar-nav">
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#project">Project</a></li>
-    </ul>
+    <span style="font-family:'Comic sans MS'" class="nav navbar-nav">
+      <span><a href="#about">ABOUT</a></span>
+      <br>
+      <span><a href="#education">EDUCATION</a></span>
+      <br>
+      <span><a href="#project">PROJECT</a></span>
+      <br>
+      </span>
   </div>
 </nav>
      <div id="about">
-      <h2 style="font-family:'Comic sans MS'">About</h2>
+      <h2 style="font-family:'Comic sans MS'">ABOUT</h2>
       <p style="font-family:'Georgia'">I'm currently a sophomore student at Brooklyn College that is majored in Computer Science.</p>
       <p style="font-family:'Georgia'">I'm passionate about languages and sneaker culture.</p>
       <p style="font-family:'Georgia'"> For now, the languages that I've acquired include English, Mandarin, Cantonese, Japanese, and Spanish.</p>
@@ -46,48 +96,94 @@ p {text-align: center;}
       I've been contacting computers from a very young age and that I'm a game lover.
       </p>
       <br>
+      <div class="popup" onclick="myFunctionL()">Click To Know The Top Three Languages I've Acquired
+      <span class="popuptext" id="Languages">
+        <ul style="list-style-type:square;" >
+        <li>Chinese</li>
+        <li>Japanese</li>
+        <li>Spanish</li>
+        </ul>
+      </span>
+      </div>
       <img class="marginauto" src="https://previews.123rf.com/images/dizanna/dizanna1703/dizanna170300822/74019858-hello-word-cloud-in-different-languages-of-the-world-background-concept.jpg" alt="Different Languages" width="250" height="250" hspace="0">
+      <div class="popup" onclick="myFunctionS()">Click To Know The Top Three Sneakers I Like The Most
+      <span class="popuptext" id="Sneakers">
+        <ul style="list-style-type:square;" >
+        <li>Nike Air Force 1 Low fragment design x CLOT</li>
+        <li>Adidas Yeezy 700 V3 Azael</li>
+        <li>Jordan 1 Retro High Obsidian UNC</li>
+        </ul>
+      </span>
+      </div>
       <img class="marginauto" src="https://i.pinimg.com/originals/20/71/a5/2071a5abd9994ade38ddc33a20fb03b2.jpg" alt="Collection of Sneakers" width="250" height="250" hspace="0">
+      <div class="popup" onclick="myFunctionG()">Click To Know The Top Three Games I Played The Most
+      <span class="popuptext" id="Games">
+        <ul style="list-style-type:square;" >
+        <li>League of Legends</li>
+        <li>Counter-Strike: Global Offensive</li>
+        <li>League of Legends: Teamfight Tactics</li>
+        </ul>
+      </span>
+      </div>
       <img class="marginauto" src="https://media1.giphy.com/media/5YkZivffg31lfCci9x/source.gif" alt="Computer Games" width="250" height="250" hspace="0">
       
       
       </div>
       <div id="education">
-      <h2 style="font-family:'Comic sans MS'">Education</h2>
-      <h3 style="font-family:'Georgia'">Past</h3>
+      <h2 style="font-family:'Comic sans MS'">EDUCATION</h2>
+      <h3 style="font-family:'Georgia'">PAST</h3>
       <p style="font-family:'Georgia'">International High School at Lafayette</p>
       <br>
       <a href="http://www.inths.org/">
       <img class="marginauto" src="https://pbs.twimg.com/profile_images/1379794799/Logo1.jpg" alt="IHSL Logo" width="250" height="100" hspace="50">
       </a>
       <img class="marginauto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-iCfm4A8sJRFWQqA0gfDlRSq2ZSyWPNkWBBrOwc2-btUo5YX8&usqp=CAU" alt="Arrow" width="250" height="100" hspace="140">
+      <h3 style="font-family:'Georgia'">CURRENT</h3>
       <p style="font-family:'Georgia'">CUNY Brooklyn College</p>
       <a href="http://www.brooklyn.cuny.edu/web/home.php">
       <img class="marginauto" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Brooklyn_College_Logo.svg/1280px-Brooklyn_College_Logo.svg.png" alt="BK Logo" width="250" height="100" hspace="100">
       </a>
       </div>
       <div id="project">
-      <h2 style="font-family:'Comic sans MS'">Project</h2>
+      <h2 style="font-family:'Comic sans MS'">PROJECT</h2>
       <p style="font-family:'Georgia'">Below demonstrates the projects that I've worked on CISC 3115:</p>
-      <ul style="list-style-type:square;">
-      <li><a href="https://github.com/victorliangzheng88/A1---Top-Streaming-Music-Artists">Top Streaming Music Artist</a></li>
-      <li><a href="https://github.com/victorliangzheng88/A2---Music-playlist">Music Playlist</a></li>
-      <li><a href="https://github.com/victorliangzheng88/A3---Movie-Titles">Movie Titles</a></li>
-      <li><a href="https://github.com/victorliangzheng88/A4---Movie-Genres">Movie Genres</a></li>
-      </ul>
+      <span style="font-family:'Georgia'"><a href="https://github.com/victorliangzheng88/A1---Top-Streaming-Music-Artists">Top Streaming Music Artist</a></span>
+      <br>
+      <span style="font-family:'Georgia'"><a href="https://github.com/victorliangzheng88/A2---Music-playlist">Music Playlist</a></span>
+      <br>
+      <span style="font-family:'Georgia'"><a href="https://github.com/victorliangzheng88/A3---Movie-Titles">Movie Titles</a></span>
+      <br>
+      <span style="font-family:'Georgia'"><a href="https://github.com/victorliangzheng88/A4---Movie-Genres">Movie Genres</a></span>
+      <br>
       <p style="font-family:'Georgia'">Top Streaming Music Artist: A project that  read in a file of the top streaming music artist in Spotify and converts those data into the format of the number of times the artist appeared on the list and also sorted it by their names alphabetically.</p>
       <p style="font-family:'Georgia'">Music Playlist: A project that read in multiples files of the top streaming music with the artist in Spotify and convert those data into a playlist with the possibility of manipulating those data with a song history list.</p>
       <p style="font-family:'Georgia'">Movie Titles: A project that read in a CSV file of movie titles and parse that data into a binary search tree. With that data, we are required to find movie titles between the range of the two movie titles that the user provides to the program in a binary search tree.</p>
       <p style="font-family:'Georgia'">Movie Genres: A project that read in a CSV file of movie genres and parse that data into a LinkedList. With that data, we are required to answer three questions:</p>
-      <ol style="font-family:'Georgia'">
-      <li>How many movies are classified under each genre?</li>
-      <li>How many for the whole data set versus the most recent 5 years?</li>
-      <li>How many movies of each genre came out each decade?</li>
-      </ol>
+      
+      <span style="font-family:'Georgia'">How many movies are classified under each genre?</span>
+      <br>
+      <span style="font-family:'Georgia'">How many for the whole data set versus the most recent 5 years?</span>
+      <br>
+      <span style="font-family:'Georgia'">How many movies of each genre came out each decade?</span>
+      <br>
       <br>
       </div>
       <br>
       <hr/>
-      <iframe width="0" height="0" src="https://www.youtube.com/watch?v=VuYAHG_T17U" frameborder="0" allowfullscreen></iframe>
+      <script>
+      function myFunctionL() {
+      var popup = document.getElementById("Languages");
+      popup.classList.toggle("show");
+      }
+      function myFunctionS() {
+      var popup = document.getElementById("Sneakers");
+      popup.classList.toggle("show");
+      }
+      function myFunctionG() {
+      var popup = document.getElementById("Games");
+      popup.classList.toggle("show");
+      }
+      </script>
+      <embed src="music/JJD-Adventure.mp3" loop="true" autostart="true" width="2" height="0">
       </body>
       </html>
