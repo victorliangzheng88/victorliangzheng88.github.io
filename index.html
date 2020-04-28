@@ -169,6 +169,9 @@ p {text-align: center;}
       </div>
       <br>
       <hr/>
+	<audio id= "audio1" controls="controls" onloadeddata="setHalfVolume()">
+		<source src="music/JJD-Adventure.mp3"  type="audio/mp3">
+			</audio>
       <script>
       function myFunctionL() {
       var popup = document.getElementById("Languages");
@@ -182,7 +185,10 @@ p {text-align: center;}
       var popup = document.getElementById("Games");
       popup.classList.toggle("show");
       }
+	      function setHalfVolume() {
+    var myAudio = document.getElementById("audio1");  
+    myAudio.volume = 0.5;
+}
       </script>
-      <embed src="music/JJD-Adventure.mp3" loop="true" autostart="true" width="2" height="0">
       </body>
       </html>
