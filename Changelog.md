@@ -11,5 +11,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tasklist for professional practice.
 ### Changed
 - Fixed typo in the README.
+- Added few sentences in the README to explain the reason that the website might not be available.
 
 [0.0.1]: https://github.com/victorliangzheng88/Website
